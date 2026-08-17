@@ -144,27 +144,30 @@ formato de precio que definamos.
 
 ## Contacto real (Instagram y WhatsApp)
 
-En `index.html`, buscar este bloque (cerca del final, en el pie de
-página):
+Ya están puestos, en `index.html`, dentro de `.pie-enlaces`:
 
 ```html
 <div class="pie-enlaces">
-  <a href="#" class="pie-enlace">Instagram</a>
-  <a href="#" class="pie-enlace">WhatsApp</a>
+  <a href="https://www.instagram.com/petitapetitgt/" class="pie-enlace" target="_blank" rel="noopener noreferrer">Instagram</a>
+  <a href="https://wa.me/50238704869" class="pie-enlace" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </div>
 ```
 
-Reemplazar los dos `href="#"`:
+Si hay que cambiarlos (nuevo número, nueva cuenta) o agregar un tercero
+(Facebook, TikTok...), mismo patrón:
 
-- **Instagram:** `https://instagram.com/tu_usuario`
-- **WhatsApp:** `https://wa.me/CODIGOPAISNUMERO`, todo junto, sin
-  espacios, sin guiones y sin el `+`. Ejemplo con código de Guatemala
-  (502) y un número 5555-5555: `https://wa.me/50255555555`.
-  Opcional: agregar `?text=Hola, quiero hacer un pedido` al final del
-  link para que el mensaje ya venga escrito.
-
-Decime el usuario de Instagram y el número de WhatsApp y lo dejo
-puesto directamente.
+- **Instagram:** `https://www.instagram.com/usuario/` — la URL del
+  perfil, sin el `?igsh=...` que agrega la app al compartir (es un
+  parámetro de tracking de una sola vez, no hace falta en un link
+  permanente).
+- **WhatsApp:** `https://wa.me/CODIGOPAISNUMERO`, todo junto, sin `+`,
+  espacios, guiones ni paréntesis — así lo pide la documentación
+  oficial de WhatsApp. Opcional: `?text=Hola, quiero hacer un pedido`
+  al final para que el mensaje ya venga escrito.
+- **`target="_blank" rel="noopener noreferrer"`** en los tres: abre el
+  enlace en pestaña nueva (no se pierde el menú de fondo) y evita que
+  la página de destino pueda manipular esta pestaña — buena práctica
+  de seguridad estándar para cualquier link externo.
 
 ## Fotos reales
 
