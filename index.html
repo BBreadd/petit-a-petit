@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petit à Petit — Menú</title>
+<meta name="description" content="Petit à Petit — pastelería artesanal. Cupcakes, donas y pasteles hechos a mano.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="nav-wrap" id="inicio">
+  <nav class="nav">
+    <a href="#inicio" class="nav-marca">Petit à Petit</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <!-- Los links de Destacados y de cada categoría se agregan solos,
+           leyendo CATEGORIAS en js/datos.js. Este de acá es el único fijo. -->
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="marco-decorativo">
+    <p class="hero-eyebrow">Pastelería artesanal</p>
+    <h1 class="hero-titulo">Petit à Petit</h1>
+    <p class="hero-lema">Hecho con amor, paso a paso</p>
+    <a href="#mainCategorias" class="hero-boton">Ver el menú</a>
+  </div>
+</section>
+
+<main id="mainCategorias">
+  <!-- "Destacados" (si aplica) y una sección por cada entrada de CATEGORIAS
+       se generan solos desde js/datos.js + js/app.js. Ver README.md. -->
+</main>
+
+<footer class="pie" id="contacto">
+  <p class="pie-marca">Petit à Petit</p>
+  <p class="pie-linea">Pedidos por WhatsApp o Instagram</p>
+  <div class="pie-enlaces">
+    <!-- Reemplazar estos dos href con los reales. Formato y ejemplos en README.md -->
+    <a href="#" class="pie-enlace">Instagram</a>
+    <a href="#" class="pie-enlace">WhatsApp</a>
+  </div>
+  <p class="pie-copy">© <span id="anio"></span> Petit à Petit</p>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
