@@ -1,6 +1,4 @@
-// ---------------------------------------------------------------------------
-// Única fuente de verdad del sitio. Ver README.md para la guía completa.
-// ---------------------------------------------------------------------------
+// Única fuente de verdad del sitio — ver README.md para la guía completa.
 
 // Los apartados del menú, en el orden en que deben aparecer (nav y página).
 // Agregar un apartado nuevo = agregar un objeto acá. No se toca HTML ni CSS.
@@ -14,25 +12,7 @@ const CATEGORIAS = [
   { id: "roles", nombre: "Roles de canela"}
 ];
 
-// Cada postre. Para agregar uno nuevo: copiar un bloque y cambiar los valores.
-//
-//   categoria       id de una categoría de CATEGORIAS (arriba).
-//   nombre          nombre del postre.
-//   precio          como texto, con el símbolo que usen (ej. "Q35.00"). Si
-//                   hay descuento, este es el precio YA rebajado.
-//   precioOriginal  "" = sin descuento, la tarjeta se ve normal. Con un
-//                   valor (ej. "Q45.00"), aparece tachado junto a "precio"
-//                   — el patrón de "antes/ahora" de cualquier tienda online.
-//   descripcion     una línea corta.
-//   imagenes     arreglo con 0 a 3 rutas de foto, ej. ["img/a.jpg", "img/b.jpg"].
-//                [] (vacío) = se muestra un ícono de reemplazo. Con 2 o 3
-//                fotos, la tarjeta muestra puntitos para pasar entre ellas.
-//   destacado    true para que aparezca también en "Destacados", el
-//                apartado especial que solo existe mientras haya al menos
-//                un producto marcado así. false o ausente = no aparece.
-//   etiqueta     texto corto para un sello en la tarjeta (ej. "Nuevo",
-//                "Promo", "-20%", "Edición especial"). "" o ausente = sin
-//                sello, la tarjeta se ve normal.
+// Cada postre. Campos documentados en README.md, sección "Agregar un postre".
 const PRODUCTOS = [
   // CUPCAKES
   {
